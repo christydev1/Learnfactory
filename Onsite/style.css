@@ -1,0 +1,390 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* ..............................header............................ */
+
+header {
+  display: flex;
+  border: 1px solid black;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 15vh;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ....................................JavaScript Academy.................... */
+
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(/img/background.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: monospace;
+  gap: 10px;
+}
+
+.heroSection h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.heroSection p {
+  font-size: 3vw;
+}
+
+.heroSection button {
+  border: none;
+  background-color: orange;
+  padding: 15px 40px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* .......................................Who We Are.......................... */
+
+.about,
+.contact,
+.testimonial,
+.images {
+  padding: 70px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.about section {
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 50px;
+}
+
+.about img {
+  height: 100%;
+  width: 45%;
+}
+
+.about article {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about article button {
+  width: 120px;
+  padding: 10px 0px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+/* .......................................What We Do.......................... */
+
+.services {
+  background-color: aliceblue;
+}
+
+.services h3 {
+  text-align: center;
+  font-size: 50px;
+  /* padding: 5px 0px;
+  font-weight: bold; */
+}
+
+.fig {
+  display: flex;
+  gap: 3%;
+  flex-direction: row;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  /* font-weight: bold; */
+}
+
+figcaption {
+  padding: 2px 4px;
+}
+
+article {
+  /* font-size: 14px; */
+  font-weight: 40px;
+  word-spacing: 1px;
+  padding: 2px 4px;
+}
+
+.figure {
+  border: 0.5px solid gray;
+  box-shadow: 0.1px 0 0 0 gray;
+}
+
+/* ...............................Contact Us......................................... */
+
+.contact h4 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.contactAddress {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin-top: 50px;
+}
+
+.address {
+  border: 1px solid black;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.address a {
+  font-size: 20px;
+}
+
+.form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  padding: 5px 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button[type="submit"] {
+  width: 50%;
+  height: 45px;
+  background: gray;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ...............................Testimonials....................................... */
+
+.testimonial h5 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.testimony {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimony figure {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  /* justify-content: center; */
+  padding: 10px 0px;
+}
+
+.testifier {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimony figcaption {
+  padding: 10px;
+  text-align: center;
+}
+
+.testimony figcaption b {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+.testimony figcaption p {
+  text-align: start;
+}
+
+/* ...............................Our Partners....................................... */
+
+.images h6 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.images {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 5%;
+}
+
+.img {
+  width: 10%;
+  height: auto;
+}
+
+/* ...............................Social Handles..................................... */
+
+footer {
+  height: 40vh;
+  background-color: rgb(3, 25, 3);
+  padding: 0px 10px;
+  font-family: monospace;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+}
+
+.social {
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+.social h6 {
+  color: white;
+  padding: 2px 5px;
+  text-align: start;
+  font-size: 30px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 150px;
+  margin: 3px;
+}
+
+.icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: white;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@media only screen and (max-width: 1000px) {
+  .about,
+  .services
+  {
+    padding: 70px 20px;
+  }
+.about section {
+  height: 80vh;
+}
+.fig{
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 10px;
+
+}
+
+.fig .    b  ,figure{
+  height: 80vh;
+  font-size: 15px;
+  width: 45%;
+}
+.about articl{
+  width: 50%;
+  font-size: 15px;
+}
+.second_para{
+  display: none;
+}
+
+
+
+}
+@media only screen and (max-width: 550px)  {
+  .about section {
+  flex-direction: column;
+  gap: 20px;
+  height:fit-content ;
+
+  }
+  .about section article {
+    width: 100%;
+    gap: 10px;
+  }  
+
+}
+
+nav{
+  display: none;
+}
+.menuicon {
+  display: block;
+  font-size: 2opx;
+
+}
